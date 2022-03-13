@@ -1,0 +1,128 @@
+.app-container {
+  
+  font-family: Inter;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #524f4f;
+  color: white;
+}
+
+
+nav{
+  background-color: rgb(40, 192, 141);
+  height: 50px;
+  padding: 30px 25px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  
+}
+nav.dark {
+  background-color: #21222A;
+}
+.nav-image{
+  width: 70px;
+  display: flex;
+  margin-right: 10px;
+
+}
+nav > h2{
+  margin-right: auto;
+}
+
+.toggler{
+    color: #2B283A;
+    display: flex;
+    align-items: center;
+}
+.toggler--light {
+  color: #2B283A;
+}
+
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+.toggler--slider--circle{
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+  justify-content: flex-end;
+}
+
+/* .main-container{
+  margin-left: 1.2rem;
+  margin-top: 60px;
+} */
+main{
+  padding: 57px 27px;
+  /* background-image: url("./images/react-icon-light.png"); 
+  background-repeat: no-repeat;
+  background-position: right center; */
+  flex: 1 1 auto;
+  background-color: white;
+  color: #2B283A;
+}
+main > h2{
+  margin-left: 8rem;
+  max-width: 900px;
+  color: white;
+  
+}
+main.dark {
+  /* background-image: url("../images/react-dark-logo.png");  */
+  background-color: #282D35;
+  color: white;    
+}
+
+.main-list{
+  line-height: 2;
+  margin-left: 8rem;
+  /* background-image: url("./images/react-dark-logo.png") */
+  
+}
+.main-list > li::marker{
+  color: rgb(40, 192, 141);
+  font-size: 1.5rem;
+}
+footer{
+  background-color: rgb(40, 192, 141);
+  display: flex;
+  justify-content: center;
+}
+footer.dark{
+  background-color: #21222A;
+}
